@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./static/styles.css" rel="stylesheet">
+  <title>Agência de Viagens</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <h1>Agência de Viagens</h1>
+  </header>
+
+  <main>
+    <div class="offers-section">
+      <div class="offers-text">
+        <img src="./static/svgs/travel-bag.svg" alt="travel-bag">
+        <h2 class="title">As melhores localizações para a sua viagem!</h2>
+      </div>
+      <nav class="cards-carousel">
+        <div class="btn-carousel">
+          <img src="./static/svgs/arrow_left.svg" alt="arrow-left">
+        </div>
+        <div class="card">
+          <img src="./static/imgs/montanha.jpg" alt="Imagem Montanha">
+          <div class="card-label">
+            <div class="label-text">
+              <h3 class="primary">Montanha</h3>
+              <h4 class="secondary">Vista esplêndida</h4>
+            </div>
+            <hr>
+            <div class="label-price">
+              <h4 class="primary"><span class="small">R$</span>557,00</h4>
+              <h5 class="secondary">por pessoa</h5>
+            </div>
+            <button type="button" class="button" onclick="redirectLugar('montanha')">
+              <img src="./static/svgs/ticket.svg" alt="ticket">
+              Veja mais
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./static/imgs/praia.jpg" alt="Imagem Praia">
+          <div class="card-label">
+            <div class="label-text">
+              <h3 class="primary">Praia</h3>
+              <h4 class="secondary">Brisa e sol</h4>
+            </div>
+            <hr>
+            <div class="label-price">
+              <h4 class="primary"><span class="small">R$</span>657,00</h4>
+              <h5 class="secondary">por pessoa</h5>
+            </div>
+            <button type="button" class="button" onclick="redirectLugar('praia')">
+              <img src="./static/svgs/ticket.svg" alt="ticket">
+              Veja mais
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./static/imgs/campo.jpg" alt="Imagem Campo">
+          <div class="card-label">
+            <div class="label-text">
+              <h3 class="primary">Campo</h3>
+              <h4 class="secondary">Tranquilidade</h4>
+            </div>
+            <hr>
+            <div class="label-price">
+              <h4 class="primary"><span class="small">R$</span>457,00</h4>
+              <h5 class="secondary">por pessoa</h5>
+            </div>
+            <button type="button" class="button" onclick="redirectLugar('campo')">
+              <img src="./static/svgs/ticket.svg" alt="ticket">
+              Veja mais
+            </button>
+          </div>
+        </div>
+        <div class="btn-carousel">
+          <img src="./static/svgs/arrow-right.svg" alt="arrow-right">
+        </div>
+      </nav>
+    </div>
+
+    <div class="offers-section">
+      <nav class="cards-carousel">
+        <div class="btn-carousel">
+          <img src="./static/svgs/arrow_left.svg" alt="arrow-left">
+        </div>
+        <div class="card">
+          <img src="./static/imgs/ame_latina.jpeg" alt="Imagem América Latina">
+          <div class="card-label">
+            <div class="label-text">
+              <h3 class="primary">Tour América Latina</h3>
+              <h4 class="secondary">Cultura vibrante</h4>
+            </div>
+            <hr>
+            <div class="label-price">
+              <h4 class="primary"><span class="small">R$</span>1257,00</h4>
+              <h5 class="secondary">por pessoa</h5>
+            </div>
+            <button type="button" class="button" onclick="redirectLugar('ame-latina')">
+              <img src="./static/svgs/ticket.svg" alt="ticket">
+              Veja mais
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./static/imgs/lisboa.webp" alt="Imagem Lisboa">
+          <div class="card-label">
+            <div class="label-text">
+              <h3 class="primary">Lisboa</h3>
+              <h4 class="secondary">Charme histórico</h4>
+            </div>
+            <hr>
+            <div class="label-price">
+              <h4 class="primary"><span class="small">R$</span>657,00</h4>
+              <h5 class="secondary">por pessoa</h5>
+            </div>
+            <button type="button" class="button" onclick="redirectLugar('lisboa')">
+              <img src="./static/svgs/ticket.svg" alt="ticket">
+              Veja mais
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./static/imgs/orlando.jpg" alt="Imagem Orlando">
+          <div class="card-label">
+            <div class="label-text">
+              <h3 class="primary">Orlando</h3>
+              <h4 class="secondary">Diversão sem fim</h4>
+            </div>
+            <hr>
+            <div class="label-price">
+              <h4 class="primary"><span class="small">R$</span>957,00</h4>
+              <h5 class="secondary">por pessoa</h5>
+            </div>
+            <button type="button" class="button" onclick="redirectLugar('orlando')">
+              <img src="./static/svgs/ticket.svg" alt="ticket">
+              Veja mais
+            </button>
+          </div>
+        </div>
+        <div class="btn-carousel">
+          <img src="./static/svgs/arrow-right.svg" alt="arrow-right">
+        </div>
+      </nav>
+      <div class="offers-text">
+        <img src="./static/svgs/cash.svg" alt="travel-bag">
+        <h2 class="title">Passagens com preços imbatíveis!</h2>
+      </div>
+    </div>
+    <!-- Form -->
+    <!-- <div id="form-container">
+      <form>
+        <select name="local" id="local" required>
+          <option value="" selected disabled>Selecione um destino</option>
+          <option value="praia">Praia</option>
+          <option value="montanha">Montanha</option>
+          <option value="campo">Campo</option>
+        </select>
+        <button type="button" onclick="redirectLugar()">Viajar</button>
+      </form>
+      <h4 id="error"></h4>
+      <h3 id="lugares-disponiveis"></h3>
+    </div> -->
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>
